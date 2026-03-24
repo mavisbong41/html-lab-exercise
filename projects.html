@@ -2,51 +2,72 @@
 <html lang="en">
 
 <head>
-<meta charset="UTF-8">
-<title>Projects</title>
-<meta name="description" content="Projects page of Bong Zi Shan's portfolio">
+    <meta charset="UTF-8">
+    <title>Projects</title>
+    <meta name="description" content="Projects page of Bong Zi Shan's portfolio">
 </head>
 
 <body>
 
-<main>
+<header>
+    <h1>My Projects</h1>
+    <hr>
+</header>
 
-<section id="projects">
-<h1>My Projects</h1>
+    <main>
+        <section id="projects">
+            <!-- align is deprecated. The modern CSS alternative is float: left -->
+            <figure>
+                <img src="image/me.png" alt="Profile photo of Bong Zi Shan" width="200" align="left" title="This is me!">
+                <figcaption>Profile Photo</figcaption>
+            </figure>
 
-<figure>
-<!-- align is deprecated. Modern alternative is CSS float property -->
-<img src="https://placehold.co/200" alt="Profile photo of Bong Zi Shan" width="200" height="200" align="left" title="This is me!">
-<figcaption>Profile Photo</figcaption>
-</figure>
+            <p>I am Bong Zi Shan, a second-year software engineering student at UTM. 
+            I focus on building AI prototypes and using Computer Vision for real-world tasks. 
+            You can view my full projects on <a href="https://github.com/mavisbong41" target="_blank">GitHub</a>.</p>
 
-<p>I am Bong Zi Shan, a second-year software engineering student at UTM. 
-I focus on building AI prototypes and using Computer Vision for real-world tasks. 
-You can view my full projects on <a href="https://github.com/mavisbong41" target="_blank">GitHub</a>.</p>
+            <br clear="all">
+            <hr>
 
-<br clear="all">
+            <!-- align is deprecated. The modern CSS alternative is float: right -->
+            <figure>
+                <a href="https://github.com/mavisbong41" target="_blank">
+                    <img src="image/project1.png" alt="Screenshot of HeartBeat AI dashboard" width="350" align="right">
+                </a>
+                <figcaption>Project 1 — HeartBeat AI (Fall Detection)</figcaption>
+            </figure>
 
-<figure>
-<a href="https://github.com/mavisbong41" target="_blank">
-<img src="https://placehold.co/350x200" alt="Screenshot of HeartBeat AI dashboard showing fall detection alerts" width="350" height="200" align="right">
-</a>
-<figcaption>Project 1 — HeartBeat AI (Fall Detection)</figcaption>
-</figure>
+            <h3>Project: HeartBeat AI</h3>
+            <p>This project is an elderly safety system that uses Computer Vision to detect falls in real-time. 
+            I was responsible for the whole system architecture and the automated emergency response logic. 
+            It aims to protect seniors living alone by alerting caregivers immediately during emergencies.</p>
 
-<h3>Project: HeartBeat AI</h3>
-<p>This project is an elderly safety system that uses Computer Vision to detect falls in real-time. 
-I was responsible for the system architecture and the automated emergency response logic. 
-It aims to protect seniors living alone by alerting caregivers immediately during emergencies.</p>
+            <br clear="all">
+            <hr>
 
-<br clear="all">
+            <!-- align is deprecated. The modern CSS alternative is float: left -->
+            <figure>
+                <a href="https://github.com/mavisbong41" target="_blank">
+                    <img src="image/project2.png" alt="Screenshot of Etiqa+ Insurance Purchase mobile interface" width="210" align="left" title="Click to view the app prototype">
+                </a>
+                <figcaption>Project 2 — Etiqa+ eMoney Insurance Portal <br><mark>(Click image to view)</mark></figcaption>
+            </figure>
 
-</section>
+            <h3>Project: Etiqa+ eMoney Insurance Portal</h3>
+            <p>This project is a mobile insurance management system that simplifies the process of purchasing and renewing policies through eMoney. 
+            I was responsible for designing the user interface for real-time payment calculations and fraud detection. 
+            It aims to provide a seamless experience for policyholders to manage their insurance in one centralized platform with new payment feature of eMoney.</p>
 
-</main>
+            <br clear="all">
 
-<footer>
-<small>2026 Bong Zi Shan. All rights reserved.</small>
-</footer>
+        </section>
+
+    </main>
+
+    <footer>
+        <hr>
+        <small>&copy; 2026 Bong Zi Shan. All rights reserved.</small>
+    </footer>
 
 </body>
 </html>
