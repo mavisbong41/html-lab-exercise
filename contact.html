@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<title>Contact</title>
+<meta name="description" content="Contact page of Bong Zi Shan's portfolio">
+</head>
+
+<body>
+
+<main>
+
+<section id="contact">
+<h2>Contact Me</h2>
+
+<form action="#" method="post">
+
+<fieldset>
+<legend>Personal Details</legend>
+
+<p>
+<label for="fullname">Full Name:</label><br>
+<input type="text" id="fullname" name="fullname"
+style="border: 2px solid navy; padding: 6px; font-size: 14px;"
+placeholder="Bong Zi Shan" required maxlength="60">
+</p>
+
+<p>
+<label for="email">Email:</label><br>
+<input type="email" id="email" name="email"
+style="border: 2px solid navy; padding: 6px; font-size: 14px;"
+placeholder="zi.shan@graduate.utm.my" required>
+</p>
+
+<p>
+<label for="phone">Phone Number:</label><br>
+<input type="tel" id="phone" name="phone"
+style="border: 2px solid navy; padding: 6px; font-size: 14px;"
+placeholder="018-7834105">
+</p>
+
+<p>
+<label for="age">Age:</label><br>
+<input type="number" id="age" name="age"
+style="border: 2px solid navy; padding: 6px; font-size: 14px;"
+min="1" max="100" placeholder="21">
+</p>
+
+<p>
+<label for="dob">Date of Birth:</label><br>
+<input type="date" id="dob" name="dob"
+style="border: 2px solid navy; padding: 6px; font-size: 14px;"
+value="2005-04-01">
+</p>
+
+<p>
+<label for="satisfaction">Satisfaction Level: </label><br>
+<input type="range" id="satisfaction" name="satisfaction"
+style="padding: 4px;"
+min="1" max="10">
+</p>
+
+</fieldset>
+
+<fieldset>
+<legend>Message Details</legend>
+
+<p>
+<label for="subject">Subject:</label><br>
+<select id="subject" name="subject"
+style="border: 2px solid navy; padding: 6px; font-size: 14px; background-color: #f9f9f9;">
+  <optgroup label="General">
+  <option>Hello</option>
+  <option>Introduction</option>
+    <option>Feedback</option>
+  </optgroup>
+  <optgroup label="Work">
+    <option>Job Opportunity</option>
+    <option>Collaboration</option>
+    <option>Internship</option>
+  </optgroup>
+</select>
+</p>
+
+<p>
+<label for="message">Message:</label><br>
+<textarea id="message" name="message"
+style="border: 2px solid navy; padding: 6px; font-size: 14px;"
+placeholder="Hello, I would like to collaborate on a project." required maxlength="500"></textarea>
+</p>
+
+</fieldset>
+
+<fieldset>
+<legend>Topics of Interest</legend>
+
+<p>
+<input type="checkbox" id="web" name="interest" value="web">
+<label for="web">Web Development</label>
+</p>
+<p>
+<input type="checkbox" id="mobile" name="interest" value="mobile">
+<label for="mobile">Mobile Development</label>
+</p>
+<p>
+<input type="checkbox" id="ai" name="interest" value="ai">
+<label for="ai">Artificial Intelligence</label>
+</p>
+
+</fieldset>
+
+<fieldset>
+<legend>Preferred Contact Method</legend>
+
+<p>
+<input type="radio" id="contactEmail" name="contactmethod" value="email">
+<label for="contactEmail">Email</label>
+</p>
+<p>
+<input type="radio" id="contactPhone" name="contactmethod" value="phone">
+<label for="contactPhone">Phone</label>
+</p>
+<p>
+<input type="radio" id="contactWhatsapp" name="contactmethod" value="whatsapp">
+<label for="contactWhatsapp">WhatsApp</label>
+</p>
+
+</fieldset>
+
+<p>
+<button type="submit"
+style="background-color: navy; color: white; padding: 8px 16px; font-size: 14px;">
+Submit
+</button>
+</p>
+
+</form>
+</section>
+
+</main>
+
+<footer>
+  <small>2026 Bong Zi Shan. All rights reserved.</small>
+</footer>
+
+</body>
+</html>
