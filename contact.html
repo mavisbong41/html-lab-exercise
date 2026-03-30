@@ -4,6 +4,7 @@
 <head>
 <meta charset="UTF-8">
 <title>Contact</title>
+<link rel="stylesheet" href="style.css">
 <meta name="description" content="Contact page of Bong Zi Shan's portfolio">
 </head>
 
@@ -25,42 +26,36 @@
 <p>
 <label for="fullname">Full Name:</label><br>
 <input type="text" id="fullname" name="fullname"
-style="border: 2px solid navy; padding: 6px; font-size: 14px;"
 placeholder="Bong Zi Shan" required maxlength="60">
 </p>
 
 <p>
 <label for="email">Email:</label><br>
 <input type="email" id="email" name="email"
-style="border: 2px solid navy; padding: 6px; font-size: 14px;"
 placeholder="zi.shan@graduate.utm.my" required>
 </p>
 
 <p>
 <label for="phone">Phone Number:</label><br>
 <input type="tel" id="phone" name="phone"
-style="border: 2px solid navy; padding: 6px; font-size: 14px;"
 placeholder="018-7834105">
 </p>
 
 <p>
 <label for="age">Age:</label><br>
 <input type="number" id="age" name="age"
-style="border: 2px solid navy; padding: 6px; font-size: 14px;"
 min="1" max="100" placeholder="21">
 </p>
 
 <p>
 <label for="dob">Date of Birth:</label><br>
 <input type="date" id="dob" name="dob"
-style="border: 2px solid navy; padding: 6px; font-size: 14px;"
 value="2005-04-01">
 </p>
 
 <p>
 <label for="satisfaction">Satisfaction Level: </label><br>
 <input type="range" id="satisfaction" name="satisfaction"
-style="padding: 4px;"
 min="1" max="10">
 </p>
 
@@ -72,7 +67,7 @@ min="1" max="10">
 <p>
 <label for="subject">Subject:</label><br>
 <select id="subject" name="subject"
-style="border: 2px solid navy; padding: 6px; font-size: 14px; background-color: #f9f9f9;">
+font-size: 14px; background-color: #f9f9f9;">
   <optgroup label="General">
   <option>Hello</option>
   <option>Introduction</option>
@@ -89,7 +84,6 @@ style="border: 2px solid navy; padding: 6px; font-size: 14px; background-color: 
 <p>
 <label for="message">Message:</label><br>
 <textarea id="message" name="message"
-style="border: 2px solid navy; padding: 6px; font-size: 14px;"
 placeholder="Hello, I would like to collaborate on a project." required maxlength="500"></textarea>
 </p>
 
@@ -132,10 +126,7 @@ placeholder="Hello, I would like to collaborate on a project." required maxlengt
 </fieldset>
 
 <p>
-<button type="submit"
-style="background-color: navy; color: white; padding: 8px 16px; font-size: 14px;">
-Submit
-</button>
+<button type="submit">Submit</button>
 </p>
 
 </form>
