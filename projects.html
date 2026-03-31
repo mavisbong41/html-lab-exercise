@@ -10,65 +10,82 @@
 
 <body>
 
-<header>
-    <h1>My Projects</h1>
-    <hr>
+<header class="header-flex">
+    <div class="header-text">
+        <h1>My Projects</h1>
+        <hr>
+    </div>
+
+    <div class="header-image">
+        <img src="image/me.png" alt="Profile photo of Bong Zi Shan">
+    </div>
 </header>
 
-    <main>
-        <section id="projects">
-            <!-- align is deprecated. The modern CSS alternative is float: left -->
-            <figure>
-                <img src="image/me.png" alt="Profile photo of Bong Zi Shan" width="200" align="left" title="This is me!">
-                <figcaption>Profile Photo</figcaption>
-            </figure>
+<nav>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="skills.html">Skills</a></li>
+        <li><a href="academic.html">Academic</a></li>
+        <li><a href="projects.html" class="active">Projects</a></li>
+        <li><a href="contact.html">Contact</a></li>
+    </ul>
+</nav>
 
-            <p>I am Bong Zi Shan, a second-year software engineering student at UTM. 
-            I focus on building AI prototypes and using Computer Vision for real-world tasks. 
-            You can view my full projects on <a href="https://github.com/mavisbong41" target="_blank">GitHub</a>.</p>
+<main>
+    <section id="projects">
+        <!-- align is deprecated. The modern CSS alternative is float: left -->
+        <figure>
+            <img src="image/me.png" alt="Profile photo of Bong Zi Shan" width="200" align="left" title="This is me!">
+            <figcaption>Profile Photo</figcaption>
+        </figure>
 
-            <br clear="all">
-            <hr>
+        <p>I am Bong Zi Shan, a second-year software engineering student at UTM. 
+        I focus on building AI prototypes and using Computer Vision for real-world tasks. 
+        You can view my full projects on <a href="https://github.com/mavisbong41" target="_blank">GitHub</a>.</p>
 
-            <!-- align is deprecated. The modern CSS alternative is float: right -->
-            <figure>
-                <a href="https://github.com/mavisbong41" target="_blank">
-                    <img src="image/project1.png" alt="Screenshot of HeartBeat AI dashboard" width="350" align="right">
-                </a>
-                <figcaption>Project 1 — HeartBeat AI (Fall Detection)</figcaption>
-            </figure>
-
-            <h3>Project: HeartBeat AI</h3>
-            <p>This project is an elderly safety system that uses Computer Vision to detect falls in real-time. 
-            I was responsible for the whole system architecture and the automated emergency response logic. 
-            It aims to protect seniors living alone by alerting caregivers immediately during emergencies.</p>
-
-            <br clear="all">
-            <hr>
-
-            <!-- align is deprecated. The modern CSS alternative is float: left -->
-            <figure>
-                <a href="https://github.com/mavisbong41" target="_blank">
-                    <img src="image/project2.png" alt="Screenshot of Etiqa+ Insurance Purchase mobile interface" width="210" align="left" title="Click to view the app prototype">
-                </a>
-                <figcaption>Project 2 — Etiqa+ eMoney Insurance Portal <br><mark>(Click image to view)</mark></figcaption>
-            </figure>
-
-            <h3>Project: Etiqa+ eMoney Insurance Portal</h3>
-            <p>This project is a mobile insurance management system that simplifies the process of purchasing and renewing policies through eMoney. 
-            I was responsible for designing the user interface for real-time payment calculations and fraud detection. 
-            It aims to provide a seamless experience for policyholders to manage their insurance in one centralized platform with new payment feature of eMoney.</p>
-
-            <br clear="all">
-
-        </section>
-
-    </main>
-
-    <footer>
+        <br clear="all">
         <hr>
-        <small>&copy; 2026 Bong Zi Shan. All rights reserved.</small>
-    </footer>
+
+        <!-- align is deprecated. The modern CSS alternative is float: right -->
+        <figure>
+            <a href="https://github.com/mavisbong41" target="_blank">
+                <img src="image/project1.png" alt="Screenshot of HeartBeat AI dashboard" width="350" align="right">
+            </a>
+            <figcaption>Project 1 — HeartBeat AI (Fall Detection)</figcaption>
+        </figure>
+
+        <h3>Project: HeartBeat AI</h3>
+        <p>This project is an elderly safety system that uses Computer Vision to detect falls in real-time. 
+        I was responsible for the whole system architecture and the automated emergency response logic. 
+        It aims to protect seniors living alone by alerting caregivers immediately during emergencies.</p>
+
+        <br clear="all">
+        <hr>
+
+        <!-- align is deprecated. The modern CSS alternative is float: left -->
+        <figure>
+            <a href="https://github.com/mavisbong41" target="_blank">
+                <img src="image/project2.png" alt="Screenshot of Etiqa+ Insurance Purchase mobile interface" width="210" align="left" title="Click to view the app prototype">
+            </a>
+            <figcaption>Project 2 — Etiqa+ eMoney Insurance Portal <br><mark>(Click image to view)</mark></figcaption>
+        </figure>
+
+        <h3>Project: Etiqa+ eMoney Insurance Portal</h3>
+        <p>This project is a mobile insurance management system that simplifies the process of purchasing and renewing policies through eMoney. 
+        I was responsible for designing the user interface for real-time payment calculations and fraud detection. 
+        It aims to provide a seamless experience for policyholders to manage their insurance in one centralized platform with new payment feature of eMoney.</p>
+
+        <br clear="all">
+
+    </section>
+
+</main>
+
+<footer>
+    <hr>
+    <small>&copy; 2026 Bong Zi Shan. All rights reserved.</small>
+</footer>
 
 </body>
 </html>

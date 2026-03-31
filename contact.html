@@ -10,10 +10,27 @@
 
 <body>
 
-<header>
-  <h1>Contact Me</h1>
-  <hr>
+<header class="header-flex">
+  <div class="header-text">
+    <h1>Contact Me</h1>
+    <hr>
+  </div>
+
+  <div class="header-image">
+    <img src="image/me.png" alt="Profile photo of Bong Zi Shan">
+  </div>
 </header>
+
+<nav>
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="skills.html">Skills</a></li>
+    <li><a href="academic.html">Academic</a></li>
+    <li><a href="projects.html">Projects</a></li>
+    <li><a href="contact.html" class="active">Contact</a></li>
+  </ul>
+</nav>
 
 <main>
 
@@ -66,11 +83,10 @@ min="1" max="10">
 
 <p>
 <label for="subject">Subject:</label><br>
-<select id="subject" name="subject"
-font-size: 14px; background-color: #f9f9f9;">
+<select id="subject" name="subject">
   <optgroup label="General">
-  <option>Hello</option>
-  <option>Introduction</option>
+    <option>Hello</option>
+    <option>Introduction</option>
     <option>Feedback</option>
   </optgroup>
   <optgroup label="Work">
@@ -135,7 +151,7 @@ placeholder="Hello, I would like to collaborate on a project." required maxlengt
 </main>
 
 <footer>
-  <small>2026 Bong Zi Shan. All rights reserved.</small>
+  <small>&copy; 2026 Bong Zi Shan. All rights reserved.</small>
 </footer>
 
 </body>
