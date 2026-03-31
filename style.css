@@ -1,3 +1,10 @@
+/* ============================================
+   BREAKPOINTS
+   mobile-first base: 320px and up (default)
+   tablet:  @media (min-width: 600px)
+   desktop: @media (min-width: 1024px)
+   ============================================ */
+
 /* Task 1 */
 @import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,700;1,400&family=Playfair+Display:wght@700&display=swap');
  
@@ -51,7 +58,7 @@ body {
   line-height: 1.7;
 }
 
-/* Task 2*/
+/* Task 2 */
 h1 {
   font-family: var(--font-heading);
   font-size: 3.2rem;
@@ -280,7 +287,8 @@ nav {
 
 nav ul {
   display: flex;
-  justify-content: flex-end;
+  justify-content: flex-start;
+  flex-direction: column;
   flex-wrap: wrap;
   gap: var(--space-sm);
   list-style: none;
@@ -318,9 +326,11 @@ nav a.active {
 
 .header-flex {
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
   align-items: center;
   gap: var(--space-md);
+  text-align: center;
 }
 
 .header-text {
@@ -338,7 +348,7 @@ nav a.active {
 /* Task 4 */
 .card-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  grid-template-columns: 1fr;
   gap: var(--space-md);
   margin-top: var(--space-md);
 }
@@ -358,12 +368,12 @@ nav a.active {
 }
 
 .card-featured {
-  grid-column: span 2;
+  grid-column: span 1;
 }
 
 .page-grid {
   display: grid;
-  grid-template-columns: 1fr 280px;
+  grid-template-columns: 1fr;
   gap: var(--space-md);
 }
 
@@ -374,4 +384,69 @@ nav a.active {
   border-radius: 8px;
   box-shadow: 0 2px 6px rgba(0,0,0,0.1);
   align-self: start;
+}
+
+/* Task 5 */
+@media (min-width: 600px) {
+  .card-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .header-flex {
+    flex-direction: row;
+    text-align: left;
+  }
+
+  nav ul {
+    flex-direction: row;
+    justify-content: flex-end;
+  }
+}
+
+@media (min-width: 1024px) {
+  .card-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .card-featured {
+    grid-column: span 3;
+  }
+
+  .page-grid {
+    grid-template-columns: 1fr 280px;
+  }
+
+  nav ul {
+    flex-wrap: nowrap;
+  }
+}
+
+/* clean up old HTML presentation attributes */
+.table-center {
+  text-align: center;
+}
+
+.table-right {
+  text-align: right;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+table th,
+table td {
+  border: 1px solid var(--color-grey-mid);
+  padding: 0.8rem;
+}
+
+.projects-figure-left {
+  float: left;
+  margin: 0 var(--space-md) var(--space-sm) 0;
+}
+
+.projects-figure-right {
+  float: right;
+  margin: 0 0 var(--space-sm) var(--space-md);
 }

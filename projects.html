@@ -3,6 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projects</title>
     <link rel="stylesheet" href="style.css">
     <meta name="description" content="Projects page of Bong Zi Shan's portfolio">
@@ -34,9 +35,8 @@
 
 <main>
     <section id="projects">
-        <!-- align is deprecated. The modern CSS alternative is float: left -->
-        <figure>
-            <img src="image/me.png" alt="Profile photo of Bong Zi Shan" width="200" align="left" title="This is me!">
+        <figure class="projects-figure-left">
+            <img src="image/me.png" alt="Profile photo of Bong Zi Shan" width="200" title="This is me!">
             <figcaption>Profile Photo</figcaption>
         </figure>
 
@@ -47,10 +47,9 @@
         <br clear="all">
         <hr>
 
-        <!-- align is deprecated. The modern CSS alternative is float: right -->
-        <figure>
+        <figure class="projects-figure-right">
             <a href="https://github.com/mavisbong41" target="_blank">
-                <img src="image/project1.png" alt="Screenshot of HeartBeat AI dashboard" width="350" align="right">
+                <img src="image/project1.png" alt="Screenshot of HeartBeat AI dashboard" width="350">
             </a>
             <figcaption>Project 1 — HeartBeat AI (Fall Detection)</figcaption>
         </figure>
@@ -63,10 +62,9 @@
         <br clear="all">
         <hr>
 
-        <!-- align is deprecated. The modern CSS alternative is float: left -->
-        <figure>
+        <figure class="projects-figure-left">
             <a href="https://github.com/mavisbong41" target="_blank">
-                <img src="image/project2.png" alt="Screenshot of Etiqa+ Insurance Purchase mobile interface" width="210" align="left" title="Click to view the app prototype">
+                <img src="image/project2.png" alt="Screenshot of Etiqa+ Insurance Purchase mobile interface" width="210" title="Click to view the app prototype">
             </a>
             <figcaption>Project 2 — Etiqa+ eMoney Insurance Portal <br><mark>(Click image to view)</mark></figcaption>
         </figure>
