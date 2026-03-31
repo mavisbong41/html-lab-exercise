@@ -1,3 +1,4 @@
+/* Task 1 */
 @import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,700;1,400&family=Playfair+Display:wght@700&display=swap');
  
 :root {
@@ -48,4 +49,221 @@ body {
   color: var(--color-text);
   background-color: var(--color-surface);
   line-height: 1.7;
+}
+
+/* Task 2*/
+h1 {
+  font-family: var(--font-heading);
+  font-size: 3.2rem;
+  line-height: 1.25;
+  color: var(--color-surface-alt);
+  margin: 0 0 var(--space-sm) 0;
+}
+
+h2 {
+  font-family: var(--font-heading);
+  font-size: 2.4rem;
+  line-height: 1.3;
+  color: var(--color-primary);
+  /* margin gives vertical spacing between sections, easier to read compared to everything being too tight */
+  margin: var(--space-lg) 0 var(--space-sm) 0;
+}
+
+h3 {
+  font-family: var(--font-heading);
+  font-size: 2rem;
+  line-height: 1.35;
+  color: var(--color-secondary);
+  margin: var(--space-md) 0 var(--space-sm) 0;
+}
+
+h4 {
+  font-family: var(--font-body);
+  font-size: 1.7rem;
+  font-weight: 700;
+  line-height: 1.4;
+  color: var(--color-secondary);
+  margin: var(--space-sm) 0 0.4rem 0;
+}
+
+p,
+li {
+  font-size: 1.6rem;
+  line-height: 1.75;
+  color: var(--color-text);
+}
+
+/* margin adds space below each paragraph so text is easier to read */
+p {
+  margin: 0 0 var(--space-sm) 0;
+}
+
+small {
+  font-size: 1.2rem;
+  line-height: 1.5;
+  color: var(--color-muted);
+}
+
+blockquote {
+  font-family: var(--font-body);
+  font-size: 1.7rem;
+  font-style: italic;
+  line-height: 1.8;
+  color: var(--color-secondary);
+  /* padding is for space INSIDE the box(text away from border), margin is for space OUTSIDE(separates from paragraphs) */
+  padding: var(--space-md) var(--space-md) var(--space-md) var(--space-lg);
+  margin: var(--space-md) 0;
+  border-left: 4px solid var(--color-accent);
+  background-color: var(--color-accent-light);
+  border-radius: 0 6px 6px 0;
+  position: relative;
+}
+
+blockquote cite {
+  display: block;
+  font-size: 1.4rem;
+  font-style: normal;
+  color: var(--color-muted);
+  margin-top: var(--space-sm);
+}
+
+code {
+  font-size: 1.4rem;
+  line-height: 1.6;
+  color: var(--color-primary);
+  background-color: var(--color-grey-light);
+  padding: 0.2rem 0.5rem;
+  border-radius: 4px;
+}
+
+caption {
+  font-family: var(--font-heading);
+  font-size: 1.6rem;
+  font-weight: 700;
+  line-height: 1.5;
+  color: var(--color-primary);
+  caption-side: top;
+  padding: var(--space-sm) 0;
+  text-align: left;
+}
+
+header {
+  background-color: var(--color-primary);
+  color: var(--color-surface-alt);
+  /* using padding so the text sits nicely inside the header area, not touching the edges */
+  padding: var(--space-lg);
+}
+
+header p {
+  color: var(--color-accent);
+  font-size: 1.6rem;
+  margin: 0;
+}
+
+header hr {
+  display: none;
+}
+
+nav {
+  background-color: var(--color-secondary);
+  color: var(--color-surface-alt);
+  padding: var(--space-sm) var(--space-lg);
+  /* margin-bottom creates space between nav and main content */
+  margin-bottom: var(--space-md);
+}
+
+main {
+  background-color: var(--color-surface-alt);
+  /* padding keeps content away from edges, margin auto is used to center the whole layout */
+  padding: var(--space-lg);
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+footer {
+  background-color: var(--color-grey-light);
+  color: var(--color-muted);
+  /* padding = inner spacing inside footer, margin-top pushes it away from the main content above */
+  padding: var(--space-md) var(--space-lg);
+  margin-top: var(--space-lg);
+  border-top: 1px solid var(--color-grey-mid);
+  font-size: 1.3rem;
+}
+
+footer address {
+  font-style: normal;
+  margin-bottom: var(--space-sm);
+  line-height: 1.8;
+}
+
+a:link {
+  color: var(--color-secondary);
+  text-decoration: underline;
+}
+
+a:visited {
+  color: var(--color-grey-dark);
+  text-decoration: underline;
+}
+
+a:hover {
+  color: var(--color-primary);
+  text-decoration: none;
+}
+
+a:active {
+  color: var(--color-accent);
+  text-decoration: none;
+}
+
+hr {
+  border: none;
+  border-top: 1px solid var(--color-grey-mid);
+  margin: var(--space-md) 0;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+ul,
+ol {
+  padding-left: var(--space-lg);
+  margin: var(--space-sm) 0 var(--space-md) 0;
+}
+
+mark {
+  background-color: var(--color-accent);
+  color: var(--color-text);
+  padding: 0.1rem 0.3rem;
+  border-radius: 3px;
+}
+
+abbr[title] {
+  text-decoration: underline dotted var(--color-grey-dark);
+  cursor: help;
+}
+
+figure {
+  margin: 0 0 var(--space-md) 0;
+}
+
+figcaption {
+  font-size: 1.3rem;
+  color: var(--color-muted);
+  margin-top: 0.4rem;
+}
+
+button,
+input,
+textarea,
+select {
+  border-radius: 6px;
+}
+
+section {
+  background-color: var(--color-surface-alt);
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
 }
