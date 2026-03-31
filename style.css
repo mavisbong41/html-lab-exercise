@@ -334,3 +334,44 @@ nav a.active {
   object-fit: cover;
   border: 3px solid var(--color-accent);
 }
+
+/* Task 4 */
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: var(--space-md);
+  margin-top: var(--space-md);
+}
+
+.card {
+  background-color: var(--color-surface);
+  border: 1px solid var(--color-grey-mid);
+  padding: var(--space-md);
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  align-content: start;
+  transition: transform 0.2s;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+}
+
+.card-featured {
+  grid-column: span 2;
+}
+
+.page-grid {
+  display: grid;
+  grid-template-columns: 1fr 280px;
+  gap: var(--space-md);
+}
+
+.sidebar {
+  background-color: var(--color-surface);
+  border: 1px solid var(--color-grey-mid);
+  padding: var(--space-md);
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  align-self: start;
+}
