@@ -586,16 +586,18 @@ dd {
 .skills-nav a:visited {
   display: inline-block;
   padding: 0.4rem 1rem;
-  color: #000000;
+  color: var(--color-text);
   text-decoration: none;
   border-radius: 4px;
   transition: background-color 0.2s;
 }
 
 .skills-nav a:hover {
+  color: var(--color-text);
   background-color: var(--color-accent-light);
 }
 
 .skills-nav a:active {
+  color: var(--color-text);
   background-color: var(--color-accent);
 }
