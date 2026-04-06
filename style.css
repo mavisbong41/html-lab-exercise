@@ -324,6 +324,13 @@ nav a.active {
   border-bottom: 3px solid var(--color-accent);
 }
 
+nav a:focus,
+.skills-nav a:focus,
+a:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px var(--color-accent);
+}
+
 .header-flex {
   display: flex;
   flex-direction: column;
@@ -348,7 +355,7 @@ nav a.active {
 /* Task 4 */
 .card-grid {
   display: grid;
-  grid-template-columns: 1fr;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
   gap: var(--space-md);
   margin-top: var(--space-md);
 }
@@ -360,6 +367,11 @@ nav a.active {
   border-radius: 8px;
   box-shadow: 0 2px 6px rgba(0,0,0,0.1);
   align-content: start;
+  transition: transform 0.2s;
+}
+
+.card:hover {
+  transform: translateY(-4px);
 }
 
 .card-featured {
@@ -404,7 +416,7 @@ nav a.active {
   }
 
   .card-featured {
-    grid-column: span 3;
+    grid-column: span 2;
   }
 
   .page-grid {
